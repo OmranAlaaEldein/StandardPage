@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+function getLocation() {
+  if (navigator.geolocation) {
+    alert(navigator.geolocation.getCurrentPosition(showPosition));
+  } else {
+    alert( "Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  alert( "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude);
+}
+
+</script>
+
+</body>
+</html>
+
